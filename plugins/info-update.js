@@ -7,7 +7,7 @@ let text = `
 ❏────
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Lainya', url: 'https://fangzbot.websites.co.in/'}},
+    {index: 1, urlButton: {displayText: 'Lainya', url: 'https://yann.com/'}},
 ]
 let tm = {
 text: text,

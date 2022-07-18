@@ -1,21 +1,8 @@
 let handler = async (m, { conn }) => {
-	//-----PRICE
-//sewa
-let sh = '5'
-let sn = '10'
-let ss = '25'
-let sp = '40'
-let sv = '65'
-//premium
-let ph = '5'
-let pn = '15'
-let pp = '45'
-let pv = '65'
-let ppm = '70'
 let info = `
-*${htki} PAYMENT ${htka}*
+*${htki} Payment ${htka}*
 
-©2022 FangzBot Official 
+©2022 YannMd Official 
 `
 const sections = [
    {
@@ -44,7 +31,7 @@ await conn.sendMessage(m.chat, listMessage, { quoted: m})
 }
 
 handler.help = ['pay', 'payment']
-handler.tags = ['main']
+handler.tags = ['info']
 handler.command = /^(pay(ment)?|payment)$/i
 handler.private = true
 

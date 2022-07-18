@@ -15,5 +15,6 @@ let handler = async (m, { text }) => {
 }
 handler.help = ['covid'].map(v => v + ' <negara>')
 handler.tags = ['internet']
+handler.limit = true
 handler.command = /^(corona|covid|covid19)$/i
 export default handler

@@ -14,40 +14,39 @@ let pv = '65'
 let ppm = '70'
 let info = `
 *${htki} sᴇᴡᴀ ${htka}*
-┏⫹⫺ *ʜᴇᴍᴀᴛ* 
+┏⫹⫺ *𝙷𝚎𝚖𝚊𝚝* 
 ┗$ ${sh}k/grup (1 minggu)
 
-┏⫹⫺ *ɴᴏʀᴍᴀʟ* 
+┏⫹⫺ *𝙽𝚘𝚛𝚖𝚊𝚕* 
 ┗$ ${sn}k/grup (1 bulan)
 
-┏⫹⫺ *sᴛᴀɴᴅᴀʀ* 
+┏⫹⫺ *𝚂𝚝𝚊𝚗𝚍𝚊𝚛* 
 ┗$ ${ss}k/grup (2 bulan)
 
-┏⫹⫺ *ᴘʀᴏ* 
+┏⫹⫺ *𝙿𝚛𝚘* 
 ┗$ ${sp}k/grup (3 bulan)
 
-┏⫹⫺ *ᴘᴇʀᴍᴀɴᴇɴ* 
+┏⫹⫺ *𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝* 
 ┗$ ${sv}k/grup (Permanen)
 
 ──···────────────────···──
 
-*${htki} ᴘʀᴇᴍɪᴜᴍ ${htka}*
-┏⫹⫺ *ʜᴇᴍᴀᴛ* 
+*${htki} 𝙿𝚛𝚎𝚖𝚒𝚞𝚖 ${htka}*
+┏⫹⫺ *𝙷𝚎𝚖𝚊𝚝* 
 ┗$ ${ph}k (1 minggu)
 
-┏⫹⫺ *ɴᴏʀᴍᴀʟ* 
+┏⫹⫺ *𝙽𝚘𝚛𝚖𝚊𝚕* 
 ┗$ ${pn}k (1 bulan)
 
-┏⫹⫺ *ɢᴏᴏᴅ* 
+┏⫹⫺ *𝙶𝚘𝚘𝚍* 
 ┗$ ${pp}k (3 bulan)
 
-┏⫹⫺ *ᴘʀᴏ* 
+┏⫹⫺ *𝙿𝚛𝚘* 
 ┗$ ${pv}k (5 bulan)                                            
 
-*📦 Kalau mau dapat discon cek website TokoBot*
-Link: https://toko.ly/TokoBot
+𝚈𝚊𝚗 𝙼𝚞𝚕𝚝𝚒 𝙳𝚎𝚟𝚒𝚌𝚎
 
-–––––– *ᴋᴇʙɪᴊᴀᴋᴀɴ* ––––––
+–––––– *𝙺𝚎𝚋𝚒𝚓𝚊𝚔𝚊𝚗* ––––––
 🗣️: Kak, Kok harganya mahal banget?
 💬: Mau tawar menawar? boleh, silahkan chat owner aja.. max tawar 5k
 
@@ -58,7 +57,7 @@ Link: https://toko.ly/TokoBot
 `
 const sections = [
    {
-	title: `✃ sᴇᴡᴀ`,
+	title: `✃ 𝚂𝚎𝚠𝚊`,
 	rows: [
 	    {title: "𝗛𝗘𝗠𝗔𝗧", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + sh + 'k (1 minggu)' },
 	    {title: "𝗡𝗢𝗥𝗠𝗔𝗟", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + sn + 'k (1 bulan)' },
@@ -67,13 +66,12 @@ const sections = [
 	{title: "🔖 𝗩𝗜𝗣", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + sv + 'k (Permanen)' },
 	]
     }, {
-    title: `✃ ᴘʀᴇᴍɪᴜᴍ`,
+    title: `✃ 𝙿𝚛𝚎𝚖𝚒𝚞𝚖`,
 	rows: [
 	    {title: "𝗛𝗘𝗠𝗔𝗧", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + ph + 'k (1 minggu)' },
 	    {title: "𝗡𝗢𝗥𝗠𝗔𝗟", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + pn + 'k (1 bulan)' },
 	{title: "𝗚𝗢𝗢𝗗", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + pp + 'k (3 bulan)' },
 	{title: "𝗣𝗥𝗢", rowId: '.pay', description: '𝗣𝗿𝗶𝗰𝗲: ' + pv + 'k (5 bulan)' },
-	//{title: "🌟 𝗣𝗘𝗥𝗠𝗔𝗡𝗘𝗡𝗧", rowId: '.order *Paket:* PERMANENT • Premium', description: '𝗣𝗿𝗶𝗰𝗲: ' + ppm + 'k (UNLIMITED)' },
 	]
     }, {
     title: `✃ INFO`,
@@ -87,7 +85,7 @@ const listMessage = {
   text: ' ',
   footer: info,
   title: null,
-  buttonText: "ʙ ᴜ ʏ",
+  buttonText: "𝙱 𝚞 𝚢",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})

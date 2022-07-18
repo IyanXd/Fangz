@@ -7,7 +7,7 @@ conn.sendMessage(m.chat, {
   templateButtons: [{
     index: 1,
     urlButton: {
-      displayText: `Salin Link`,
+      displayText: `Click`,
       url: 'https://www.whatsapp.com/otp/copy/https://chat.whatsapp.com/' + await conn.groupInviteCode(m.chat)
     }
   }],

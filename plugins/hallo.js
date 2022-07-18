@@ -1,10 +1,10 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `${htki} *ADA APA* ${htka}
+let text = `${htki} *Ada Afaah Yaa?* ${htka}
 
-        💬 Ada bantuan Bot?
+        𝖄𝖆𝖓𝖓𝖓𝕸𝖉
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Chat', url: 'https://wa.me/62895394988123'}},
+    {index: 1, urlButton: {displayText: 'Chat', url: 'https://wa.me/62895323413434'}},
 ]
 let tm = {
 text: text,

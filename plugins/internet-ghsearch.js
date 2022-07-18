@@ -8,26 +8,27 @@ let handler = async (m, { text, command, usedPrefix }) => {
     let json = await res.json()
     let str = json.items.map((repo, index) => {
         return `>      「 ${ 1 + index } 」       <
-ɴᴀᴍᴇ ʀᴇᴘᴏ : ${repo.name}
-ʙʏ : ${repo.owner.login}
-ғᴏʀᴋᴇᴅ : ${repo.fork ? 'True' : 'False'}
-ᴘʀɪᴠᴀᴛᴇ : ${repo.private ? 'True': 'False'}
+𝙽𝚊𝚖𝚎 𝚁𝚎𝚙𝚘 : ${repo.name}
+𝙱𝚢 : ${repo.owner.login}
+𝙵𝚘𝚛𝚔𝚎𝚍 : ${repo.fork ? 'True' : 'False'}
+𝙿𝚛𝚒𝚟𝚊𝚝𝚎 : ${repo.private ? 'True': 'False'}
 
-➔ ᴄʀᴇᴀᴛᴇᴅ ᴏɴ : ${formatDate(repo.created_at)}
-➔ ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇ ᴏɴ :${formatDate(repo.updated_at)}
+➔ 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 𝙾𝚗 : ${formatDate(repo.created_at)}
+➔ 𝙻𝚊𝚜𝚝 𝚄𝚙𝚍𝚊𝚝𝚎 𝙾𝚗 :${formatDate(repo.updated_at)}
 👁  ${repo.watchers}   🍴  ${repo.forks}   ⭐  ${repo.stargazers_count}
-❗ ɪssᴜᴇ : ${repo.open_issues} ${repo.description ? `
-📚 ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:
+❗ 𝙸𝚜𝚜𝚞𝚎 : ${repo.open_issues} ${repo.description ? `
+📚 𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗:
 ${repo.description}` : ''}
 
-⑂ ᴄʟᴏɴᴇ :
+⑂ 𝙲𝚕𝚘𝚗𝚎 :
 $ git clone ${repo.clone_url}
 `.trim()
     }).join('\n— — — — — — — — — — — — — —\n')
-    conn.sendHydrated(m.chat, `*${htki} ɢɪᴛʜᴜʙ sᴇᴀʀᴄʜ ${htka}*\n` + str, botdate, null, json.items.map((repo, index) => { return `${repo.html_url}` }), ['[ 1 ] ʟ ɪ ɴ ᴋ', '[ 2 ] ʟ ɪ ɴ ᴋ', '[ 3 ] ʟ ɪ ɴ ᴋ'], null,null, [[null,null],[null,null],[null,null]],m)
+    conn.sendHydrated(m.chat, `*${htki} 𝙶𝚒𝚝𝚑𝚞𝚋 𝚂𝚎𝚊𝚛𝚌𝚑 ${htka}*\n` + str, botdate, null, json.items.map((repo, index) => { return `${repo.html_url}` }), ['[ 1 ] 𝙻 𝚒 𝚗 𝚔', '[ 2 ] 𝙻 𝚒 𝚗 𝚔', '[ 3 ] 𝙻 𝚒 𝚗 𝚔'], null,null, [[null,null],[null,null],[null,null]],m)
 }
 handler.help = ['githubsearch'].map(v => v + ' <pencarian>')
 handler.tags = ['internet','downloader']
+handler.limit = true
 
 handler.command = /^g(ithub|h)s(earch)?$/i
 

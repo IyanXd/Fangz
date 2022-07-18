@@ -9,5 +9,6 @@ let handler = async (m, { text }) => {
 handler.help = ['kuncigitar'].map(v => v + ' <judul lagu>')
 handler.tags = ['internet']
 handler.command = /^kuncigitar$/i
+handler.limit = true
 
 export default handler

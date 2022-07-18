@@ -1,11 +1,11 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `*${htki} GROUP ${htka}*
+let text = `*${htki} Group ${htka}*
 
 
-              📮ᴍᴀᴜ ᴍᴏᴅᴇ ᴀᴘᴀ?
+              📮Mau Mode Afaa?
 `
 const templateButtons = [
-    {index: 3, urlButton: {displayText: '💬 ᴏᴡɴᴇʀ', url: 'https://wa.me/6288215689772'}},
+    {index: 3, urlButton: {displayText: '💬 Owner', url: 'https://wa.me/62895323413434'}},
     {index: 4, quickReplyButton: {displayText: 'Open', id: '.group open'}},
     {index: 5, quickReplyButton: {displayText: 'Close', id: '.group close'}},
 ]
