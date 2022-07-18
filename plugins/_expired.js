@@ -5,7 +5,7 @@ export async function all(m) {
     if (!chats.expired)
         return !0
     if (+new Date() > chats.expired) {
-        await this.reply(m.chat, 'Expired sudah habis saatnya bot keluar👋!')
+        await this.reply(m.chat, '📮Expired bot tinggal 00 Detik\╰► Bot akan keluar')
         await this.groupLeave(m.chat)
         chats.expired = null
     }

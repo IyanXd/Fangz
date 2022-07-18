@@ -10,6 +10,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	{title: "🔞 | Nsfw", rowId: `${usedPrefix + command} nsfw`},
 	{title: "🌟 | PremNsfwChat", rowId: `${usedPrefix + command} premnsfwchat`},
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
+	{title: "🖼️ | Antisticker", rowId: `${usedPrefix + command} antisticker`},
 	{title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "📛 | Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
@@ -29,7 +30,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 const listMessage = {
   text: ' ',
   footer: botdate,
-  title: `*${htki} OPTIONS ${htka}*`,
+  title: `*${htki} Options ${htka}*`,
   buttonText: "Click Here!",
   sections
 }
@@ -111,6 +112,15 @@ const listMessage = {
         }
       }
       chat.antiLink = isEnable
+      break
+      case 'antisticker':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiSticker = isEnable
       break
       case 'simi':
         if (!isROwner) {

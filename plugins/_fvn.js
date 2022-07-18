@@ -24,7 +24,7 @@ conn.sendMessage(m.chat,{ text: wm}, {quoted: anu})
 
 handler.help = ['tod']
 
-handler.tags = ['ᴘᴇɴᴅɪɴɢ sᴛᴜғғ']
+handler.tags = ['Pending Stuff']
 
 handler.command = /^tod$/i
 handler.owner = false

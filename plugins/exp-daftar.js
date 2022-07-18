@@ -50,8 +50,8 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
-  title: "▢- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -",
+  footer: `┗ *𝚈𝚘𝚞 𝙽𝚊𝚖𝚎:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
+  title: "▢- - - - - 𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛 - - - - -",
   buttonText: "Click Here !",
   sections
 }
@@ -72,19 +72,19 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-┏─• *ᴜsᴇʀs*
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
-│▸ *ɴᴀᴍᴇ:* ${name}
-│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
-│▸ *sɴ:* ${sn}
+┏─• *𝚄𝚜𝚎𝚛𝚜*
+│▸ *𝚂𝚝𝚊𝚝𝚞𝚜:* ☑️ 𝚂𝚞𝚌𝚌𝚎𝚜𝚏𝚞𝚕𝚕
+│▸ *𝙽𝚊𝚖𝚎:* ${name}
+│▸ *𝙰𝚐𝚎:* ${age} ʏᴇᴀʀs
+│▸ *𝚂𝚗:* ${sn}
 ┗────···
 
-ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ᴛᴀɴᴘᴀ ᴛᴇʀsʜᴀʀᴇ (. ❛ ᴗ ❛.)
+𝙳𝚊𝚝𝚊 𝚞𝚜𝚎𝚛𝚜 𝚢𝚊𝚗𝚐 𝚝𝚎𝚛𝚜𝚒𝚖𝚙𝚊𝚗 𝚍𝚒 𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝚋𝚘𝚝 𝚍𝚒𝚓𝚊𝚖𝚒𝚗 𝚊𝚖𝚊𝚗 𝚝𝚊𝚗𝚙𝚊 𝚝𝚎𝚛𝚜𝚑𝚊𝚛𝚎 (. ❛ ᴗ ❛.)
 `
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
-'fileName':'- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -',
+'fileName':'- - - - - 𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛 - - - - -',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
@@ -101,8 +101,8 @@ const listMessage = {
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'ᴍᴇɴᴜ'},'type':1},
-{'buttonId':'.donasi','buttonText':{'displayText':'ᴅᴏɴᴀsɪ'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'🌐Command'},'type':1},
+{'buttonId':'.donasi','buttonText':{'displayText':'💰Donate'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})

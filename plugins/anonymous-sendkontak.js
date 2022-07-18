@@ -14,7 +14,7 @@ async function handler(m, { command, conn, text }) {
 ➔ Nama: ${name}`
     this.reply(m.chat, 'Menggirimkan Kontak...')
 	if (other) this.reply(other, `Partner mengirimkan kontak kepadamu`)
-	if (other) this.sendHydrated(other, `${htki} ᴀɴᴏɴʏᴍᴏᴜs ᴄʜᴀᴛs ${htka}`, tks, await conn.profilePictureUrl(m.sender, 'image').catch(_ => './src/avatar_contact.png'), `wa.me/${m.sender.split`@`[0]}`, 'ᴛᴜʀɴ ᴄʜᴀᴛ ᴘᴀʀᴛɴᴇʀ', null,null, [['ʟᴇᴀᴠᴇ', '.leave'],[null,null],[null,null]], 0,  { mentionedJid: [m.sender]})
+	if (other) this.sendHydrated(other, `${htki} Anonymous Chats ${htka}`, tks, await conn.profilePictureUrl(m.sender, 'image').catch(_ => './src/avatar_contact.png'), `wa.me/${m.sender.split`@`[0]}`, 'Turn chat patner', null,null, [['Leave', '.leave'],[null,null],[null,null]], 0,  { mentionedJid: [m.sender]})
 }
 handler.help = ['sendkontak']
 handler.tags = 'anonymous'

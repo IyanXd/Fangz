@@ -102,22 +102,22 @@ let handler = async (m, { conn }) => {
   const crates = Object.keys(inventory.crates).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${user[v]}`).filter(v => v).join('\n').trim()
   const pets = Object.keys(inventory.pets).map(v => user[v] && `*${global.rpg.emoticon(v)}${v}:* ${user[v] >= inventory.pets[v] ? 'Max Levels' : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
   const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `*✧ ${name}*: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
-  const caption = `*🧑🏻‍🏫 ɴᴀᴍᴇ:* ${user.registered ? user.name : conn.getName(m.sender)}
-*▸ ᴇxᴘ:* ${user.exp}
-*▸ ʟᴇᴠᴇʟ:* ${user.level}
-*▸ ʀᴏʟᴇ:* ${user.role}
-*▸ ʜᴇᴀʟᴛʜ:* ${user.health}
-*▸ ʟɪᴍɪᴛ:* ${user.limit}
-*▸ ᴍᴏɴᴇʏ:* ${user.money}${user.atm ? `
-*▸ ᴀᴛᴍ:* ʟᴠ.${user.atm}
-*▸ ʙᴀɴᴋ:* ${user.bank} $ / ${user.fullatm} $`: ''}
+  const caption = `*🧑🏻‍🏫 𝙽𝚊𝚖𝚎:* ${user.registered ? user.name : conn.getName(m.sender)}
+*▸ 𝙴𝚡𝚙:* ${user.exp}
+*▸ 𝙻𝚎𝚟𝚎𝚕:* ${user.level}
+*▸ 𝚁𝚘𝚕𝚎:* ${user.role}
+*▸ 𝙷𝚎𝚊𝚕𝚝𝚑:* ${user.health}
+*▸ 𝙻𝚒𝚖𝚒𝚝:* ${user.limit}
+*▸ 𝙼𝚘𝚗𝚎𝚢:* ${user.money}${user.atm ? `
+*▸ 𝙰𝚝𝚖:* 𝙻𝚟.${user.atm}
+*▸ 𝙱𝚊𝚗𝚔:* ${user.bank} $ / ${user.fullatm} $`: ''}
 
-▸ *sᴛᴀᴛᴜs:* ${user.premiumTime > 0 ? 'Premium' : 'Free'}
-▸ *ʀᴇɢɪsᴛᴇʀᴇᴅ:* ${user.registered ? 'Yes':'No'}${user.premiumTime >= 1 ? `
-▸ *ᴇxᴘɪʀᴇᴅ:*
+▸ *𝚂𝚝𝚊𝚝𝚞𝚜:* ${user.premiumTime > 0 ? 'Premium' : 'Free'}
+▸ *𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛𝚎𝚍:* ${user.registered ? 'Yes':'No'}${user.premiumTime >= 1 ? `
+▸ *𝙴𝚣𝚜𝚙𝚒𝚛𝚎𝚍:*
 ${clockString(user.premiumTime - new Date() * 1)}`: ''}
 `.trim()
-  conn.sendButton(m.chat, `${htki} ᴜ s ᴇ ʀ s ${htka}`, caption, null, [`ɪɴᴠᴇɴᴛᴏʀʏ`, '.inv'],m)
+  conn.sendButton(m.chat, `${htki} 𝚄 𝚜 𝚎 𝚛 𝚜 ${htka}`, caption, null, [`𝙸𝚗𝚟𝚎𝚗𝚝𝚘𝚛𝚢`, '.inv'],m)
 }
 handler.help = ['my']
 handler.tags = ['xp']
@@ -133,5 +133,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [ye, ' *ʏᴇᴀʀs 🗓️*\n', mo, ' *ᴍᴏɴᴛʜ 🌙*\n', d, ' *ᴅᴀʏs ☀️*\n', h, ' *ʜᴏᴜʀs 🕐*\n', m, ' *ᴍɪɴᴜᴛᴇ ⏰*\n', s, ' *sᴇᴄᴏɴᴅ ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
+  return [ye, ' *𝚈𝚎𝚊𝚛𝚜 🗓️*\n', mo, ' *𝙼𝚘𝚗𝚝𝚑 🌙*\n', d, ' *𝙳𝚊𝚢𝚜 ☀️*\n', h, ' *𝙷𝚘𝚞𝚛𝚜 🕐*\n', m, ' *𝙼𝚒𝚗𝚞𝚝𝚎 ⏰*\n', s, ' *𝚂𝚎𝚌𝚘𝚗𝚍 ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }

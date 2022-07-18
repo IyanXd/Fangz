@@ -6,7 +6,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //------- NOMOR
   let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
-  let teksnomor = `${htki} *OWNER* ${htka}
+  let teksnomor = `${htki} *Owner* ${htka}
 • @${nomorown.split`@`[0]} •
 ------- ${nameown} -------
 
@@ -20,13 +20,13 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
-let teksbio = `${htki} *BIODATA* ${htka}
-*💌 Nama* : Fangz
-*✉️ Nama RL* : FangzBOT
+let teksbio = `${htki} *BioData* ${htka}
+*💌 Nama* : Yannn
+*✉️ Nama RL* : Iyann
 *♂️ Gender* : Laki - laki
 *🕋 Agama* : Islam
-*⏰ Tanggal lahir* : 25 oktober 2007
-*🎨 Umur* : 15
+*⏰ Tanggal lahir* : 25 Jan 2008
+*🎨 Umur* : 14
 *🧮 Kelas* : 9
 *🧩 Hobby* : Nonton henta*, main game, Recode script
 *💬 Sifat* : Baik, hode, softboy, tydack ramah, g*y
@@ -48,23 +48,20 @@ let teksbio = `${htki} *BIODATA* ${htka}
 🐈 *Github:* ${sgh}
 🥏 *Whatsapp* wa.me/${nomorown}
 🌐 *Discord:* Soon
-🌏 *Website:* https://fangzbot.websites.co.in/
-🎶 *Tiktok:* tiktok.com/@fangzjb
+🎶 *Tiktok:* tiktok.com/@afa.banh
 
 `
   let teks = ' '
 const sections = [
    {
-	title: `${htjava} OWNER –––––––––·•`,
+	title: `${htjava} Owner –––––––––·•`,
 	rows: [
 	    {title: "📱 • Nomor", rowId: ".owner nomor"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
-	{title: "🌐 • Website", rowId: ".website"},
 	{title: "🌎 • Script", rowId: ".sc"},
-	{title: "🏮 • Youtube", rowId: ".fyt"},
 	]
     },{
-	title: `${htjava} SUPPORT ME –––––––·•`,
+	title: `${htjava} Support Me –––––––·•`,
 	rows: [
 	    {title: "💹 • Donasi", rowId: ".donasi"},
 	{title: "🔖 • Sewa", rowId: ".sewa"},
@@ -76,7 +73,7 @@ const sections = [
 const listMessage = {
   text: teks,
   footer: null,
-  title: `${htki} *OWNER* ${htka}`,
+  title: `${htki} *Owner* ${htka}`,
   buttonText: "Click Here !",
   sections
 }

@@ -1,32 +1,38 @@
-let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `
-┌─「 Donasi • Pulsa 」
-│ • *Smartfren:* [${global.ppulsa}]
-│ • *Tri3:* [${global.ppulsa2}]
-❏────
+let handler = async (m, { conn }) => {
+let info = `
+*${htki} Donate ${htka}*
 
-┌─「 Donasi • Non Pulsa 」
-│ • *Gopay:* [${global.pgopay}]
-│ • *Dana:* [${global.pdana}]
-❏────
+2022 YannnBot Official 
 `
-const templateButtons = [
-    {index: 1, urlButton: {displayText: '✨ Saweria', url: psaweria}},
-    {index: 2, urlButton: {displayText: '📷 Instagram', url: sig}},
-    {index: 3, urlButton: {displayText: '🌎 Official Group', url: sgc}},
-    {index: 4, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
-    {index: 5, quickReplyButton: {displayText: 'Owner', id: '.owner'}},
+const sections = [
+   {
+	title: `METODE`,
+	rows: [
+	    {title: "?Dana", rowId: '.donasidana', description: 'Bayar melalui Dana' },
+	    {title: "?Gopay", rowId: '.donasigopay', description: 'Bayar melalui Gopay' },
+	{title: "?Ovo", rowId: '.donasiovo', description: 'Bayar melalui Ovo' },
+	{title: "?Motion Pay", rowId: '.donasimotionpay', description: 'Bayar melalui Motion Pay' },
+	{title: "?Pulsa Indosat", rowId: '.donasiindosat', description: 'Bayar melalui pulsa' },
+	{title: "?Pulsa Tri3", rowId: '.donasiastri', description: 'Bayar melalui pulsa' },
+	]
+    }, 
+
 ]
-let tm = {
-text: text,
-footer: global.wm,
-templateButtons: templateButtons,
-image: {url: fla + 'Donasi'}
+
+const listMessage = {
+  text: ' ',
+  footer: info,
+  title: null,
+  buttonText: "Donate",
+  sections
 }
-conn.sendMessage(m.chat, tm, m)
+await conn.sendMessage(m.chat, listMessage, { quoted: m})
+//conn.sendHydrated(m.chat, info, wm, null, sgc, "ðŸŒŽ Group Official", null,null, [['Owner','.owner']], m)
 }
-handler.help = ['donasi']
+
+handler.help = ['donasi', 'donate']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
+handler.private = true
 
 export default handler

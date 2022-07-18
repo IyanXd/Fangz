@@ -49,7 +49,7 @@ let handler = async m => m.reply(`
 handler.help = ['animelink']
 handler.tags = ['anime']
 handler.command = /^animelink$/i
-handler.register = true
+handler.limit = true
 handler.private = true
 
 export default handler 

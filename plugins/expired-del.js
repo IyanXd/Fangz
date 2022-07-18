@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     else global.db.data.chats[who].expired = false
     conn.reply(m.chat, `Berhasil menghapus hari kadaluarsa untuk Grup ini`, m)
 }
-handler.help = ['delexpired']
+handler.help = ['delesewa']
 handler.tags = ['owner']
 handler.command = /^(delexpired|delsewa)$/i
 handler.rowner = true

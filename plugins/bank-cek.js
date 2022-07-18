@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
   let user = global.db.data.users[m.sender]
   const caption = `
-▧「 *B A N K  U S E R* 」
+▧「 *BANK CEK* 」
 │ 📛 *Name:* ${user.registered ? user.name : conn.getName(m.sender)}
 │ 💳 *Atm:* ${user.atm > 0 ? 'Level ' + user.atm : '✖️'}
 │ 🏛️ *Bank:* ${user.bank} 💲 / ${user.fullatm} 💲
