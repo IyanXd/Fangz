@@ -1,27 +1,17 @@
-// S C R I P T  O R I  B Y  @BochilGaming 🔭
-// M A D E  B Y  FANGZ🌱  
-// Credits, jangan dihapus atau diubah!
+//SCRIPT RECODE BY FANGZ 💌
+// JANGAN DI HAPUS📣
 
-// - - THANKS TO - -
-// • Allah SWT
-// • Nurutomo
-// • Bochilgaming
-// • Rominaru
-// • Kannachann
-// • The.Sad.Boy01
-// • FangzBot
-// • Rasel comel
-// • Xtreshe (Beban)
-// • Dll
+//BUY NO ENC? CHAT wa.me/6288215689772
+//GITHUB: https://github.com/Fangzbotz2007
 
-//[!] Jangan Dihapus, mending ditambahin 
+//GA TAU CARA EDIT NYA? CHAT AUTHOR↑↑↑
 
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
 
-/*============= WAKTU =============*/
+/*⫘⫘⫘⫘ WAKTU ⫘⫘⫘⫘⫘*/
 let wibh = moment.tz('Asia/Jakarta').format('HH')
     let wibm = moment.tz('Asia/Jakarta').format('mm')
     let wibs = moment.tz('Asia/Jakarta').format('ss')
@@ -42,43 +32,44 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
     })
       
     
-/*============== SOCIAL ==============*/
+/*⫘⫘⫘⫘⫘ MEDIA SOSIAL ⫘⫘⫘⫘*/
+// Kalau gapunya di biarin aja!, atau ga di kasih tanda '-'
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/fangzganz?igshid=YmMyMTA2M2Y='
-global.sgh = 'https://github.com/Fangzbotz2007'
-global.sgc = 'https://chat.whatsapp.com/HpxyS6b45SoGIKG7LHddiM'
-global.sdc = 'https://s.id/Fangzganz'
-global.snh = 'https://nhentai.net/g/365296/'
+global.sig = 'https://instagram.com/yanxd81' //Instagram mu
+global.sgh = 'https://github.com/IyanXd' //Github mu
+global.sgc = 'https://chat.whatsapp.com/' //Group WhatsApp mu
+global.sdc = 'https://discord.co/' //Discord Mu
+global.snh = 'https://nhentai.net/g/365296/' //Make ini ana gausah di ganti.
 
-/*============== PAYMENT ==============*/
-global.pdana = '088215689772'
-global.povo = '088215689772'
-global.pgopay = '088215689772'
-global.ppulsa = '088215689772'
-global.ppulsa2 = '0895394988123'
-global.psaweria = 'https://saweria.co/FangzBot'
+/*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
+global.pdana = 'Pc Owner' //Dana
+global.povo = 'Pc Owner' //Ovo
+global.pgopay = 'Pc Owner' //Gopay
+global.ppulsa = '0895323413434' //Pulsa 
+global.ppulsa2 = '085806151497' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.psaweria = 'https://saweria.co/IyanXDBotZ' //Saweria
 
-/*============== NOMOR ==============*/
-global.nomorbot = '62895394988123'
-global.nomorown = '6288215689772'
-global.namebot = ' 「 FANGZ BOT ⁩㊣ 」'
-global.nameown = 'Fangz Ganz'
+/*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
+global.nomorbot = '6285806151497' //Nomor Bot mu
+global.nomorown = '62895323413434' //Nomormu
+global.namebot = '𝖄𝖆𝖓𝖓𝖓𝕸𝖉' //Nama bot mu
+global.nameown = '𝚈𝚊𝚗𝚗𝚗𝚗' //Nama mu
 
 
-/*============== STAFF ==============*/
+/*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6288215689772'],
-  ['62895336282144'],
-  ['6288215689772'],
-  ['6288215689772', 'Fangz Ganz', true]
+  ['62895323413434'], //Owner1
+  ['62895323413434'], //Owner2
+  ['62895323413434'], //Owner3
+  ['62895323413434', '𝚈𝚊𝚗𝚗𝚗𝚗 ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 
-/*============== API ==============*/
+/*⫘⫘⫘⫘ APIKEY ⫘⫘⫘⫘⫘*/
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -88,10 +79,11 @@ global.APIs = { // API Prefix
   lol: 'https://api.lolhuman.xyz',
   dhnjing: 'https://dhnjing.xyz',
   neoxr: 'https://neoxr-api.herokuapp.com',
-  zeks: 'https://api.zeks.me',
+  zeks: 'https://api.zeks.xyz',
   pencarikode: 'https://pencarikode.xyz',
   ana: 'https://anabotofc.herokuapp.com/',
   amel: 'https://melcanz.com',
+  bsbt: 'https://bsbt-api-rest.herokuapp.com', 
   hardianto: 'https://hardianto.xyz',
   botstyle: 'https://botstyle-api.herokuapp.com',
   adiisus: 'https://adiixyzapi.herokuapp.com',
@@ -100,88 +92,90 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'a7112460aaec989a',
+  'https://api.xteam.xyz': 'NezukoTachibana281207',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'c37b848002a90a0acd119b25',
+  'https://api.lolhuman.xyz': 'Papah-Chan',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.me': 'apivinz',
+  'https://api.zeks.xyz': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'gedFijw7',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
   'https://botstyle-api.herokuapp.com': 'Fa2GhFnr',
+  'https://bsbt-api-rest.herokuapp.com': 'benniismael',
   'https://hardianto.xyz': 'hardianto',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
-// Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
+// FREE APIKEY, WAJIB SUBSCRIBE:V
+// kalau mau ganti apikey mu sendiri terserah
 
-/*============== WATERMARK ==============*/
-//GANTI SETERAH MU
-global.wm = '                「 Fangz BOT あ⁩ 」' //Main Watermark
-global.wm2 = '¸„٭⊹•~⍣°”ˆ˜¨ FangzBOT-Md¨˜ˆ”°⍣~•⊹٭„¸'
-global.wm3 = '⫹⫺ Fangz 𝗕𝗢𝗧'
+/*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
+//GANTI JANGAN NGASAL.
+global.wm = '                「 𝖄𝖆𝖓𝖓𝖓𝕸𝖉 ⁩இ 」' //Wm
+global.wm2 = '➳༻❀𝖄𝖆𝖓𝖓𝖓𝕸𝖉❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '⫹⫺ 𝚈𝚊𝚗𝚗𝚗𝚗'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '𝗥𝗣𝗚 | Whatsapp ʙᴏᴛ By FANGZ'
-global.author = '       ┄┄┄┅┅❑ FANGZ ❑┅┅┄┄┄'
+global.titlebot = '𝖄𝖆𝖓𝖓𝖓𝕸𝖉' //Titlenya
+global.author = '                ✧ 𝖄𝖆𝖓𝖓𝖓𝕸𝖉⁩ ✧' //Wm author
 
 
-/*============== LOGO ==============*/
+/*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
 // INI JUGA GANTI SETERAH MU
-global.thumb = 'https://telegra.ph/file/e535be94a86c77e1eb4ee.jpg' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/0f572ab6a7180cc9c52ee.jpg'
-global.thumbbc = 'https://telegra.ph/file/0f572ab6a7180cc9c52ee.jpg' //For broadcast
-global.giflogo = 'https://telegra.ph/file/4da26de483d484af684e8.mp4'
+global.thumb = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Thumbnail nya
+global.thumb2 = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg'
+global.thumbbc = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg' //Image Bcgcb
+global.giflogo = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
-/*============== TEXT ==============*/
-global.wait = '```「▰▰▰▱▱▱▱▱▱▱」Loading...```'
-global.eror = '*Server eror✘*'
+/*⫘⫘⫘⫘ LOADING ⫘⫘⫘⫘⫘*/
+global.wait = '```▁ ▂ ▄ ▅ ▆ ▇ █ Loading. . .```'
+global.eror = '⸨Acsess Danied⸩'
 
-/*=========== TYPE DOCUMENT ===========*/
+/*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/fcc6e7fa49bd81c0e43e4.jpg'
+global.thumbdoc = 'https://telegra.ph/file/0b42f219535e17ade5e48.jpg'
 
-/*=========== FAKE SIZE ===========*/
-global.fsizedoc = '99999999999999' // default 10TB
-global.fpagedoc = '999'
+/*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
+global.fsizedoc = '99999999999999' // 10TB
+global.fpagedoc = '999' //Gausah di ganti.
 
-/*=========== HIASAN ===========*/
-// DEFAULT MENU
-global.dmenut = '❏═┅═━–〈' //top
-global.dmenub = '┊•' //body
-global.dmenub2 = '┊' //body for info cmd on Default menu
-global.dmenuf = '┗––––––––––✦' //footer
+/*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
+// GAUSAH DI GANTI.
+global.dmenut = '❏───···─────〈' //top
+global.dmenub = '│✶' //body
+global.dmenub2 = '│' //body for info cmd on Default menu
+global.dmenuf = '┗───···─────✦' //footer
 
 // COMMAND MENU
-global.dashmenu = '┅━━━━━═┅═❏ *DASHBOARD* ❏═┅═━━━━━┅'
-global.cmenut = '❏––––––『'                       //top
-global.cmenuh = '』––––––'                        //header
-global.cmenub = '┊𓇬 '                            //body
-global.cmenuf = '┗━═┅═━––––––๑\n'                //footer
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '┊'                              //pembatas menu selector
+global.dashmenu = '┅━━━━━═┅═✦ *DASHBOARD* ❏═┅═━━━━━┅'
+global.cmenut = '✦╍╌╌╍╌╌╍ ◸'                       //top
+global.cmenuh = '◿ ╍╌╌╍╌╌╍'                        //header
+global.cmenub = '│◛ '                            //body
+global.cmenuf = '╰───···─────\n'                //footer
+global.cmenua = '\nBy https://github.com/IyanXd\n     ' //after
+global.pmenus = '│'                              //pembatas menu selector
 
-global.htki = '––––––『' // Hiasan Titile (KIRI)
-global.htka = '』––––––' // Hiasan Title  (KANAN)
-global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
+global.htki = '––––––◸' // Hiasan Titile (KIRI)
+global.htka = '◿––––––' // Hiasan Title  (KANAN)
+global.lopr = '🅟' //LOGO PREMIUM ON MENU.JS
 global.lolm = 'Ⓛ' //LOGO FREE ON MENU.JS
-global.htjava = '⫹⫺'    //hiasan Doang :v
+global.htjava = '𖥸'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
-/*============== STICKER WM ==============*/
+/*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
 global.stickpack = '.'
-global.stickauth = `By Fangz BOT\nwa.me/${global.nomorbot}`
+global.stickauth = `© 𝖄𝖆𝖓𝖓𝖓𝕸𝖉\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
 
 global.multiplier = 38 // The higher, The harder levelup
 
-/*============== EMOJI ==============*/
+/*⫘⫘⫘⫘ GLOBAL EMOJI ⫘⫘⫘⫘⫘*/
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
