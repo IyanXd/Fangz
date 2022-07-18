@@ -7,6 +7,7 @@ let handler = async (m, { conn }) => {
 
 handler.help = ['simpcard']
 handler.tags = ['maker']
+handler.limit = true
 
 handler.command = /^(simpcard)$/i
 

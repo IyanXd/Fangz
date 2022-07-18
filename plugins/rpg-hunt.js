@@ -44,7 +44,7 @@ let handler = async (m, { conn, text }) => {
   //let pengirim = m.sender.split("@")[0]
   let cdm = `${MeNit(new Date - player.lasthunt)}`
   let cds = `${DeTik(new Date - player.lasthunt)}`
-  let cd1 = Math.ceil(15 - cdm)
+  let cd1 = Math.ceil(6 - cdm)
   let cd2 = Math.ceil(60 - cds)
 
   let area_monsters = monsters[Math.floor(Math.random() * monsters.length)]
@@ -63,17 +63,7 @@ let handler = async (m, { conn, text }) => {
     player.lasthunt = new Date * 1 // waktu hunt 2menit
 
     if (player.healt < 0) {
-      let msg = `─────━⃝┅ *H U N T* ┅⃝━─────
-
-🪀 *NOMOR:* *@${m.sender.split("@")[0]} Mati terbunuh*
-━══════━══════━━══════━
-☠️  *Dibunuh*: ${monsterName}
-━══════━══════━━══════━
-✧
-┬ 📮NOTE:
-│ *Request fitur ketik .report aja!*
-╰━━━━━━━━━━━━━━━━┈─◂
-     ▌│█║▌║▌║║▌║▌║█│▌`
+      let msg = `*@${m.sender.split("@")[0]}* Anda Mati Di Bunuh Oleh ${monsterName}`
       if (player.level > 0) {
         player.level -= 1
         msg += `\nLevel Anda Turun 1 Karena Mati Saat Berburu!`
@@ -86,27 +76,9 @@ let handler = async (m, { conn, text }) => {
     player.money += coins * 1
     player.exp += exp * 1
 
-    let pesan = `
-─────━⃝┅ *H U N T* ┅⃝━─────
-
-🪀 *NOMOR:* *@${m.sender.split("@")[0]}*
-━══════━══════━━══════━
-🧺 Menemukan: *${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)}*
-
-☠️ Membunuh: *${monsterName}*
-
-🤒 Berkurang: *-${dmg}Hp*
-
-❤ ️Tersisa: *${player.healt}/${100}*
-
-✧
-┬ 📮NOTE:
-│ Jika ada bug ketik .report!
-╰━━━━━━━━━━━━━━━━┈─◂
-     ▌│█║▌║▌║║▌║▌║█│▌`
-     
+    let pesan = `*@${m.sender.split("@")[0]}* Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
     m.reply(pesan)
-  } else throw `「▰▰▰▱▱▱▱▱▱▱」𝙻𝚘𝚊𝚍𝚒𝚗𝚐...*00:${cd1}:${cd2}*`
+  } else throw `Tunggu *00:0${cd1}:${cd2}* Untuk Berburu Lagi`
 }
 handler.help = ['hunt']
 handler.tags = ['rpg']
@@ -115,7 +87,7 @@ handler.command = /^hunt/i
 export default handler
 
 function MeNit(ms) {
-  let m = isNaN(ms) ? '15' : Math.floor(ms / 60000) % 60
+  let m = isNaN(ms) ? '02' : Math.floor(ms / 60000) % 60
   return [m].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function DeTik(ms) {

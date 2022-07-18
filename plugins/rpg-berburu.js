@@ -80,11 +80,11 @@ let handler = async (m, {
 		}, 18000)
 
 		setTimeout(() => {
-			m.reply('......')
+			m.reply('Dorr🔥')
 		}, 15000)
 
 		setTimeout(() => {
-			m.reply('Dapet nih')
+			m.reply('Dapat Sasaran')
 		}, 14000)
 
 		setTimeout(() => {

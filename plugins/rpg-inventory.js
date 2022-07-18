@@ -5,12 +5,19 @@ import adventure from './rpg-adventure.js'
 
 const inventory = {
   others: {
+    level: true,
+    limit: true,
+    joinlimit: true,
     health: true,
     money: true,
     exp: true,
-    joinlimit: true,
   },
   items: {
+    bibitanggur: true,
+    bibitmangga: true,
+    bibitpisang: true,
+    bibitapel: true,
+    bibitjeruk: true,
     potion: true,
     trash: true,
     wood: true,

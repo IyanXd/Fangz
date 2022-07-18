@@ -222,51 +222,52 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     let mpt = clockString(_mpt)
       const sections = [
    {
-	title: `${htki} MAIN ${htka}`,
+	title: `${htki} Main ${htka}`,
 	rows: [
-	    {title: `📛 ${pmenus} INFO BOT`, rowId: ".info", description: "Menampilkan kecepatan respon Fangz BOT"},
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner Fangz BOT"},
-	    {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
-	{title: `📮 ${pmenus} RULES BOT`, rowId: ".rules", description: `Peraturan menggunakan ${namebot}`},
-	{title: `🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "Request fitur Fangz BOT"},
+	    {title: `❀📛 ${pmenus} Info YannMd`, rowId: ".info", description: "Menampilkan kecepatan respon Bot"},
+	    {title: `❀💌 ${pmenus} Owner`, rowId: ".owner", description: "Menampilkan List owner Bot"},
+	    {title: `❀📔 ${pmenus} Script`, rowId: ".sc", description: `Source Code ${namebot}`},
+	{title: `❀📮 ${pmenus} S&K BOT`, rowId: ".rules", description: `Peraturan menggunakan ${namebot}`},
+	{title: `❀🗣️ ${pmenus} Req Fitur`, rowId: ".request", description: "Request fitur Bot"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
 	rows: [
-	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
-	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga upgrade premium"},
-	    {title: `💰 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar on 1 Minggu non stop'},
-	{title: `✨ ${pmenus} RATE`, rowId: ".rate", description: 'Support BOT agar Semangat update'},
-	{title: `🌐 ${pmenus} WEBSITE`, rowId: ".website", description: 'Jangan lupa mampir'},
+	    {title: `❀🔖 ${pmenus} ѕєωα вσт`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+	    {title: `❀📑 ${pmenus} вυу ѕ¢яιρт`, rowId: ".owner", description: "Menampilkan list harga script BOT"},
+	    {title: `❀🌟 ${pmenus} υρgяα∂є ρяємιυм`, rowId: ".premium", description: "Menampilkan list harga upgrade premium"},
+	    {title: `❀💰 ${pmenus} ∂σηαѕι`, rowId: ".donasi", description: 'Support BOT agar on 1 Minggu non stop'},
+	{title: `❀✨ ${pmenus} Rαƚҽ`, rowId: ".rate", description: 'Support BOT agar Semangat update'},
+	{title: `❀🌐 ${pmenus} WҽႦʂιƚҽ`, rowId: ".website", description: 'Jangan lupa mampir'},
 	]
 	},{
-	title: `${htki} MENU FANGZ BOT${htka}`,
+	title: `${htki} 𝖄𝖆𝖓𝖓𝖓𝕸𝖉 ${htka}`,
 	rows: [
-	    {title: `『💬』 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
-	    {title: `『🌱』 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
-	{title: `『✨』 ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-	{title: `『🎮』 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-	{title: `『🧩』 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-	{title: `『🐚』 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-	{title: `『📑』 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `『⛩️』 ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `『🔞』 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
-	{title: `『🌟』 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
-	{title: `『🎭』 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
-	{title: `『📖』 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
-	{title: `『🌐』 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-	{title: `『📩』 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `『🎨』 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `『✏️』 ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
-	{title: `『🎧』 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-	{title: `『🏢』 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
-	{title: `『👑』 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `『🗂️』 ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `『🛠️』 ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-	{title: `『ℹ️』 ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
-	{title: `『👩‍💻』 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `『🖼️』 ${pmenus} Maker`, rowId: ".? maker", description: "Fitur Maker menu"},
-	{title: `『⛔』 ${pmenus} Next Update`, rowId: ".? update", description: "Perkembangan"},
+	    {title: `இ💬☜ ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
+	    {title: `இ🌱☜ ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
+	{title: `இ✨☜ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
+	{title: `இ🎮☜ ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
+	{title: `இ🧩☜ ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
+	{title: `இ🐚☜ ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
+	{title: `இ📑☜ ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
+	{title: `இ⛩️☜ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
+	{title: `இ🔞☜ ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
+	{title: `இ🌟☜ ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
+	{title: `இ🎭☜ ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
+	{title: `இ📖☜ ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
+	{title: `இ🌐☜ ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
+	{title: `இ📩☜ ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
+	{title: `இ🎨☜ ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
+	{title: `இ✏️☜ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
+	{title: `இ🎧☜ ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
+	{title: `இ🏢☜ ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
+	{title: `இ👑☜ ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
+	{title: `இ🗂☜️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
+	{title: `இ🛠️☜ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
+	{title: `இℹ️️☜ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
+	{title: `இ👩‍💻☜ ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
+	{title: `இ🖼️ ${pmenus} Maker`, rowId: ".? maker", description: "Fitur Maker menu"},
+	{title: `இ⛔ ${pmenus} Next Update`, rowId: ".? update", description: "Perkembangan"},
 	]
   },
 ]
@@ -276,37 +277,38 @@ let tek = `*✧${ucapan()} ${conn.getName(m.sender)}*
 
 ────━⃝┅ *D A S H B O A R D* ┅⃝━────
 
-「 *I N F O  C M D* 」
-*Ⓟ* = Premium
-*Ⓛ* = Limit
+╭━━━━「 *I N F O  C M D* 」
+┝ *🅟* = Premium
+┝ *Ⓛ* = Limit
+╰═┅═━–––๑
 
-         「 *Ʋser Ɩnfσrmαtισn* 」
-🌸• *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-🌸• *ᴛᴀɢs:* @${m.sender.split`@`[0]}
-🌸• *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-🌸• *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+╭━━━━「 *𝚄𝚜𝚎𝚛𝚜 𝙸𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗* 」
+┝🌸• *𝙽𝚊𝚖𝚎:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+┝🌸• *𝚃𝚊𝚐𝚜:* @${m.sender.split`@`[0]}
+┝🌸• *𝚂𝚝𝚊𝚝𝚞𝚜:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+┝🌸• *𝙿𝚛𝚎𝚖𝚒𝚞𝚖:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+╰═┅═━═┅═━═┅═━––––––๑
 
 
-
-         「 *Bσt Ɩnfσrmαtισn* 」
-🎐• *ᴜᴘᴛɪᴍᴇ:* ${mpt}
-🎐• *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-🎐• *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-🎐• *ʟɪᴍɪᴛ:* ${usrs.limit}
-🎐• *ʟᴇᴠᴇʟ:* ${usrs.level}
-🎐• *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-🎐• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
+╭═┅═「 *𝙱𝚘𝚝 𝙸𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗* 」
+┝⏳• *𝚄𝚙𝚝𝚒𝚖𝚎:* ${mpt}
+┝⏲️• *𝚃𝚒𝚖𝚎:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
+┝👤• *𝚄𝚜𝚎𝚛𝚜:* ${Object.keys(global.db.data.users).length}
+┝🎟️• *𝙻𝚒𝚖𝚒𝚝:* ${usrs.limit}
+┝📊• *𝙻𝚎𝚟𝚎𝚕:* ${usrs.level}
+┝🏆• *𝚁𝚘𝚕𝚎:* ${usrs.role}${usrs.premiumTime > 1 ? `
+┝📛• *𝙴𝚡𝚙𝚒𝚛𝚎𝚍 𝙿𝚛𝚎𝚖𝚒𝚞𝚖:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
+╰═┅═━═┅═━═┅═━––––––๑
 
-
-               「 *Fangz BOT あ⁩* 」
+               「 *𝖄𝖆𝖓𝖓𝖓𝕸𝖉 あ⁩* 」
 `
 const listMessage = {
   text: tek,
-  footer: 'By https://fangzbot.websites.co.in/\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕',
+  footer: '📮𝖄𝖆𝖓𝖓𝖓𝕸𝖉\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕',
   mentions: await conn.parseMention(tek),
-  title: `${htki} *LIST MENU* ${htka}`,
-  buttonText: `FANGZ BOT MENU`,
+  title: `${htki} *ᵐʳ𝕐𝕒𝕟𝕟𝕟* ${htka}`,
+  buttonText: `𝖄𝖆𝖓𝖓𝖓𝕸𝖉`,
   sections
 }
   if (teks == '404') {
@@ -511,12 +513,12 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n⚡ Supported By Fangz TEAM',
+            footer: titlebot + '\n⚡ Supported By Yanz TEAM',
             templateButtons: [
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://s.id/Fangzganz'
+                        url: 'https://s.id/YannXxxx'
                     }
                 },
                 {

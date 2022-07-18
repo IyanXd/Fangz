@@ -4,17 +4,17 @@ let handler = async (m, { usedPrefix }) => {
     let timers = (cooldown - (new Date - user.lastadventure))
     if (user.health < 80) return conn.sendButton(m.chat,
 '*–––––『 LOW HEALTH 』–––––*',
-`ʏᴏᴜʀ ʜᴇᴀʟᴛʜ ɪs ʙᴇʟᴏᴡ 80﹗
+`Your health is bellow 80﹗
 ᴩʟᴇᴀsᴇ ʜᴇᴀʟ ❤ ғɪʀsᴛ ᴛᴏ ᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀɢᴀɪɴ.`.trim(), './media/lowhealth.jpg', [
-[`ʜᴇᴀʟ ❤`, `${usedPrefix}heal`]
+[`Heal ❤`, `${usedPrefix}heal`]
 ], m, {asLocation: true})
     if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, 
 '*–––––『 COOLDOWN 』–––––*',
-`ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ *ᴀᴅᴠᴇɴᴛᴜʀᴇ*, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ ᴛɪʟʟ ᴄᴏᴏʟᴅᴏᴡɴ ғɪɴɪsʜ.
+`You've Already *Adventure*, Please wait till Cooldown Finish.
 
 ⏱️ ${timers.toTimeString()}`.trim(), './media/cooldown.jpg', [
-[`ɪɴᴠᴇɴᴛᴏʀʏ`, `${usedPrefix}inventory`],
-[`ᴅᴀɪʟʏ`, `${usedPrefix}daily`]
+[`Inventory`, `${usedPrefix}inventory`],
+[`Daily`, `${usedPrefix}daily`]
 ], m, {asLocation: true})
     const rewards = reward(user)
     let text = 'You\'ve been adventure and decrease'
@@ -23,7 +23,7 @@ let handler = async (m, { usedPrefix }) => {
         user[lost] -= total * 1
         if (total) text += `\n${global.rpg.emoticon(lost)}${lost}: ${total}`
     }
-    text += '\n\n🔖 ᴀᴅᴠᴇɴᴛᴜʀᴇ ʀᴇᴡᴀʀᴅ ʀᴇᴄᴇɪᴠᴇᴅ :'
+    text += '\n\n🔖 Adventure Reward Received :'
     for (const rewardItem in rewards.reward) if (rewardItem in user) {
         const total = rewards.reward[rewardItem].getRandom()
         user[rewardItem] += total * 1
@@ -32,8 +32,8 @@ let handler = async (m, { usedPrefix }) => {
     conn.sendButton(m.chat, 
     '*–––––『 ADVENTURE 』–––––*', 
     text.trim(), './media/adventure.jpg', [
-[`ɪɴᴠᴇɴᴛᴏʀʏ`, `${usedPrefix}inventory`],
-[`ᴅᴀɪʟʏ`, `${usedPrefix}daily`]
+[`Inventory`, `${usedPrefix}inventory`],
+[`Daily`, `${usedPrefix}daily`]
 ], m, {asLocation: true})
     user.lastadventure = new Date * 1
 }

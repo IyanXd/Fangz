@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command }) => {
-m.reply('Wait 🐦')
+m.reply('𝖄𝖆𝖓𝖓𝖓𝕸𝖉')
 let audio = `https://raw.githubusercontent.com/saipulanuar/Api-Github/main/audio/${command}.mp3`
 await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
 }

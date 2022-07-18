@@ -16,26 +16,28 @@ let hiu = global.db.data.users[m.sender].hiu
 let udang = global.db.data.users[m.sender].udang
 let ikan = global.db.data.users[m.sender].ikan
 let orca = global.db.data.users[m.sender].orca
-let past = `*—「 KOLAM 🏝️ 」—*
-  
-*💌 Name :* ${name}
-*📊 Level :* ${level}
-*✨ Exp :* ${exp}
+let past = `*––––––「 KOLAM 🏝️ 」––––––*
+ 
+╭━━━━「 *BIO* 」   
+┊*💌 Name :* ${name}
+┊*📊 Level :* ${level}
+┊*✨ Exp :* ${exp}
+╰═┅═━––––––─ׄ✧
 
-✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━✧
-🐳 Paus: *${paus}*   
-🦀 Kepiting: *${kepiting}*   
-🐙 Gurita: *${gurita}*   
-🦑 Cumi: *${cumi}*   
-🐡 Buntal: *${buntal}*  
-🐠 Dory: *${dory}*
-🐬 Lumba: *${lumba}*
-🦞 Lobster: *${lobster}*
-🦈 Hiu: *${hiu}*
-🦐 Udang: *${udang}*
-🐟 Ikan: *${ikan}*
-🐋 Orca: *${orca}*
-✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━✧
+╭━━━━「 *ISI* 」
+┊🐳 Paus: *${paus}*   
+┊🦀 Kepiting: *${kepiting}*   
+┊🐙 Gurita: *${gurita}*   
+┊🦑 Cumi: *${cumi}*   
+┊🐡 Buntal: *${buntal}*  
+┊🐠 Dory: *${dory}*
+┊🐬 Lumba: *${lumba}*
+┊🦞 Lobster: *${lobster}*
+┊🦈 Hiu: *${hiu}*
+┊🦐 Udang: *${udang}*
+┊🐟 Ikan: *${ikan}*
+┊🐋 Orca: *${orca}*
+╰═┅═━––––––─ׄ✧
 🎏 Total Isi: *${paus + kepiting + gurita + cumi + buntal + dory + lumba + lobster + hiu + udang + ikan + orca}* Jenis`
 let isi = ` *🦀Kepiting = ${kepiting}*
 *🐠Dory = ${dory}*
