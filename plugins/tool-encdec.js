@@ -56,5 +56,6 @@ if (!text) throw `Contoh penggunaan ${usedPrefix}${command} anjing`
 }
 handler.command = handler.help = ['enc32', 'dec32', 'enc64', 'dec64']
 handler.tags = ['tools']
+handler.premium = true
 
 export default handler

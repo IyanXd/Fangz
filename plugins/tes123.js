@@ -1,7 +1,7 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `Nani? (・o・)`
+let info = `Apa Banh?`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 /*const message = {
@@ -12,31 +12,31 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
             templateButtons: [
                 {
                     urlButton: {
-                        displayText: '🌎 OFFICIAL GROUP',
+                        displayText: 'OFFICIAL GROUP',
                         url: sgc
                     }
                 },
                 {
                     callButton: {
-                        displayText: '📞 Add me',
+                        displayText: ' Add me',
                         phoneNumber: nomorown
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'MENU',
+                        displayText: 'Menu',
                         id: '.menu'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'PING',
+                        displayText: 'Ping',
                         id: '.ping'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'DONASI',
+                        displayText: 'Donate',
                         id: '.donasi'
                     }
                 },

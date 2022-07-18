@@ -61,5 +61,6 @@ if (args[1] == "ouo") {
 handler.help = ['short <url> <type>']
 handler.tags = ['internet']
 handler.command = /^(short(url)?)$/i
+handler.premium = true
 
 export default handler

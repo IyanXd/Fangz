@@ -1,4 +1,4 @@
-let { MessageType } = (await import('@adiwajshing/baileys')).default
+
 const Skepiting = 7000
 const Slobster = 7000
 const Sudang = 7000
@@ -29,8 +29,8 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
     let type = (args[0] || '').toLowerCase()
     let _type = (args[1] || '').toLowerCase()
     let jualbeli = (args[0] || '').toLowerCase()
-    const Kchat = `━━━━━━━━━━━━━━━━━
-*🌱 Hewan   | 💲 Harga Jual*\n━━━━━━━━━━━━━━━━━\n
+    const Kchat = `╍╌╌╍╌╌╍╌╌╍╌╌┅═━––––––๑
+*🌱 Hewan   | 💲 Harga Jual*\n═┅═━––––––━––––––๑\n
 🦀 Kepiting:      ${Skepiting}
 🦞 Lobster:       ${Slobster}
 🦐 Udang:         ${Sudang}
@@ -42,7 +42,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 🐬 Lumba:        ${Slumba}
 🐋 Paus:           ${Spaus}
 🦈 Hiu:              ${Shiu}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╍╌╌╍╌╌╍╌╌╍╌╌╍╌╌╍╌╌╍╌╌╍╌╌╍
 🐃 Banteng:      ${Sbanteng}
 🐅 Harimau:      ${Sharimau}
 🐘 Gajah:           ${Sgajah}

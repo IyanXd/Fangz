@@ -1,20 +1,25 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `${htki} OVO ${htka}
+let text = `${htki} Tri3 ${htka}
 
-Hay👋‹, ingin Donasi?
+👋‘‹, ingin melanjutkan pembayaran?
 
 💌 *Pembayaran*
-💳 Via: Ovo
+💳 Via: Pulsa Tri
 📞 Nomor: 0895323413434
 👤 A/n: Iyan
-📝 Mitra: Yann BOT
+📦 Mitra: Yann BOT
 💰 Metode pembayaran: Online ( ~Cod~ )
 
+✏️ _Informasi Pembayaran_
 
-®KLIK *SUDAH BAYAR* JIKA SUDAH TRANSFER 
+Pembayaran Sewa hanya dapat menggunakan saldo.
+Pastikan saldo kamu mencukupi untuk bertransaksi!
+
+
+❗KLIK *SUDAH BAYAR* JIKA SUDAH MEMBAYAR!
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'QRIS', url: 'https://telegra.ph/file/143a35a997b7deec882a2.jpg'}},
+    {index: 1, urlButton: {displayText: 'TOPUP', url: 'Konter Terdekat'}},
     {index: 4, quickReplyButton: {displayText: 'Sudah membayar', id: '.sudahbayar'}},
 ]
 let tm = {
@@ -25,9 +30,9 @@ image: {url: fla + 'Donasi'}
 }
 conn.sendMessage(m.chat, tm, m)
 }
-handler.help = ['ovo']
+handler.help = ['tri']
 handler.tags = ['info']
-handler.command = /^(donasiovo)$/i
+handler.command = /^(donasitri)$/i
 handler.private = true
 
 export default handler

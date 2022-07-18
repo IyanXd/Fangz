@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix, owner }) => {
            let psenjata = (_psenjata * 1)
            
         let mcng = `
-*Your 🎣Fishing Results!*
+*📮Hasil tangkapan Mu*
         
 🐟Ikan nila : ${nila}
 🐡Bawal : ${bawal}
@@ -94,7 +94,7 @@ handler.tags = ['rpg']
 handler.command = /^(mancing|memancing|fish)$/i 
 
 export default handler 
-//JANGAN DIUBAH YA YG DIBAWAH
+//JANGAN DIUBAH!
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
